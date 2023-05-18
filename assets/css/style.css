@@ -29,6 +29,7 @@ body {
 .section {
     max-width: 80%;
     margin: 0 auto;
+    gap: 100px;
 }
 
 .section-title {
@@ -91,6 +92,75 @@ body {
     transform: scale(1.05);
     color: #ff4500;
 }
+
+/*************************************** カード *****************************************/
+.card {
+    width: 288px;
+    height: auto;
+}
+
+.card-skin {
+    overflow: hidden; 
+    border-radius: 12px;
+    box-shadow: 6.5px 12.5px 20px rgba(0,0,0,.5);
+} 
+
+.card-image {
+    width: 100%;
+    height: auto;
+    padding-top: 135%;
+    background: url(../images/books.jpg) no-repeat center;
+    /* background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%); */
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.card-textbox {
+    width: 100%;
+    height: auto;
+    margin-top: -160px;
+    padding: 20px 25px;
+    /* background: #ffffff; */
+    box-sizing: border-box;
+}
+
+.card-textbox > * + * {
+    margin-top: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #848484;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.card-description {
+    font-size: 12px;
+    color: #848484;
+    line-height: 175%;
+}
+
+/**************************************** フッター *****************************************/
+
+.footer {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.footer-line {
+    margin-top: 100px;
+    border-color: #000;
+}
+  
+.footer-copy {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/************************************ トップボタンに戻る ***********************************/
   
 .back-to-top {
     background-color: #ff4500;
@@ -132,4 +202,12 @@ body {
 .back-to-top.active:hover {
     transform: scale(1.1);
     opacity: 0.8;
+}
+
+/************************************ 共通 ***********************************/
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
