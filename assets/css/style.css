@@ -135,6 +135,10 @@ body {
     line-height: 150%;
 }
 
+.card-title:hover {
+    text-decoration: underline;
+}
+
 .card-description {
     font-size: 12px;
     color: #cfcfcf;
